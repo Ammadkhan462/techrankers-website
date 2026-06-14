@@ -12,7 +12,8 @@ const Services = () => {
       color: 'from-blue-600 to-blue-400',
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200',
-      iconBg: 'bg-blue-100'
+      iconBg: 'bg-blue-100',
+      iconColor: 'text-blue-600'
     },
     {
       icon: MousePointer2,
@@ -21,7 +22,8 @@ const Services = () => {
       color: 'from-cyan-600 to-blue-500',
       bgColor: 'bg-cyan-50',
       borderColor: 'border-cyan-200',
-      iconBg: 'bg-cyan-100'
+      iconBg: 'bg-cyan-100',
+      iconColor: 'text-cyan-600'
     },
     {
       icon: TrendingUp,
@@ -30,7 +32,8 @@ const Services = () => {
       color: 'from-sky-600 to-blue-500',
       bgColor: 'bg-sky-50',
       borderColor: 'border-sky-200',
-      iconBg: 'bg-sky-100'
+      iconBg: 'bg-sky-100',
+      iconColor: 'text-sky-600'
     },
     {
       icon: Code2,
@@ -39,7 +42,8 @@ const Services = () => {
       color: 'from-indigo-600 to-blue-500',
       bgColor: 'bg-indigo-50',
       borderColor: 'border-indigo-200',
-      iconBg: 'bg-indigo-100'
+      iconBg: 'bg-indigo-100',
+      iconColor: 'text-indigo-600'
     },
     {
       icon: BarChart3,
@@ -48,7 +52,8 @@ const Services = () => {
       color: 'from-blue-600 to-cyan-500',
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200',
-      iconBg: 'bg-blue-100'
+      iconBg: 'bg-blue-100',
+      iconColor: 'text-blue-600'
     },
     {
       icon: Target,
@@ -57,7 +62,8 @@ const Services = () => {
       color: 'from-violet-600 to-blue-500',
       bgColor: 'bg-violet-50',
       borderColor: 'border-violet-200',
-      iconBg: 'bg-violet-100'
+      iconBg: 'bg-violet-100',
+      iconColor: 'text-violet-600'
     },
   ];
 
@@ -100,7 +106,7 @@ const Services = () => {
                   <div className="relative p-8 flex flex-col h-full">
                     {/* Icon Container */}
                     <div className={`${service.iconBg} w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                      <Icon className={`w-8 h-8 bg-gradient-to-br ${service.color} bg-clip-text text-transparent`} />
+                      <Icon className={`w-8 h-8 ${service.iconColor}`} strokeWidth={1.5} />
                     </div>
 
                     {/* Content */}
