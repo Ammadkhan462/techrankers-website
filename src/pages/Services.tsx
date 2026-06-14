@@ -176,29 +176,29 @@ const Services = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className={`rounded-2xl p-8 transition-all border-2 hover:shadow-2xl group ${
+                className={`rounded-2xl p-8 transition-all border-2 hover:shadow-2xl group flex flex-col h-full ${
                   pkg.highlighted
                     ? `bg-gradient-to-br ${pkg.color} text-white border-blue-300 scale-105 shadow-2xl`
                     : 'bg-white border-blue-100 text-slate-900 hover:border-blue-300'
                 }`}
               >
                 <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>
-                <p className={pkg.highlighted ? 'opacity-90 text-blue-50' : 'text-slate-600 text-sm'}>{pkg.description}</p>
+                <p className={pkg.highlighted ? 'opacity-90 text-blue-50 text-sm' : 'text-slate-600 text-sm'}>{pkg.description}</p>
                 <div className="my-6">
                   <span className="text-4xl font-black">{pkg.price}</span>
-                  <span className={pkg.highlighted ? 'opacity-75 text-blue-100' : 'text-slate-500 text-sm'}>{pkg.period}</span>
+                  <span className={pkg.highlighted ? 'opacity-75 text-blue-100 text-sm' : 'text-slate-500 text-sm'}>{pkg.period}</span>
                 </div>
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-3 mb-8 flex-grow">
                   {pkg.features.map((feature, fidx) => (
-                    <li key={fidx} className="flex items-center gap-3">
-                      <div className={`w-2 h-2 rounded-full flex-shrink-0 ${pkg.highlighted ? 'bg-white' : 'bg-blue-500'}`}></div>
-                      <span className={pkg.highlighted ? 'text-blue-50' : 'text-slate-700'}>{feature}</span>
+                    <li key={fidx} className="flex items-start gap-3">
+                      <div className={`w-2 h-2 rounded-full flex-shrink-0 mt-1 ${pkg.highlighted ? 'bg-white' : 'bg-blue-500'}`}></div>
+                      <span className={pkg.highlighted ? 'text-blue-50 text-sm' : 'text-slate-700 text-sm'}>{feature}</span>
                     </li>
                   ))}
                 </ul>
                 <Link
                   to="/contact"
-                  className={`w-full py-3 rounded-lg font-bold text-center transition-all group-hover:shadow-lg ${
+                  className={`w-full py-4 px-4 rounded-lg font-bold text-center transition-all group-hover:shadow-lg whitespace-nowrap ${
                     pkg.highlighted
                       ? 'bg-white text-blue-600 hover:bg-blue-50'
                       : 'bg-gradient-to-r from-blue-600 to-blue-500 text-white hover:shadow-lg'

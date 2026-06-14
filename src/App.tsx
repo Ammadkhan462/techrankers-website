@@ -38,9 +38,8 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-white/50 backdrop-blur-md py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <a href="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-brand-500 to-brand-700 rounded-lg flex items-center justify-center text-white font-bold text-xl group-hover:shadow-lg transition-all">TR</div>
-            <span className="text-lg font-extrabold tracking-tight text-slate-900 hidden sm:inline">TechRankers<span className="text-brand-600">.net</span></span>
+          <a href="/" className="flex items-center space-x-1 group">
+            <img src="/logo.svg" alt="TechRankers" className="h-12 w-auto group-hover:scale-110 transition-transform" />
           </a>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -110,8 +109,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-brand-500 to-brand-700 rounded-lg flex items-center justify-center font-bold text-lg">TR</div>
-              <span className="text-xl font-extrabold">TechRankers</span>
+              <img src="/logo.svg" alt="TechRankers" className="h-10 w-auto" />
             </div>
             <p className="text-slate-400">Result-driven digital marketing solutions for your business.</p>
           </div>
