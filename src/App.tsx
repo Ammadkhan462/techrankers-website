@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="/" className="flex items-center space-x-1 group">
-            <img src="/logo.svg" alt="TechRankers" className="h-20 w-auto group-hover:scale-110 transition-transform" />
+            <img src="/logo.svg" alt="TechRankers" className="h-24 w-auto group-hover:scale-110 transition-transform" />
           </a>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -109,7 +109,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/logo.svg" alt="TechRankers" className="h-14 w-auto" />
+              <img src="/logo.svg" alt="TechRankers" className="h-16 w-auto" />
             </div>
             <p className="text-slate-400">Result-driven digital marketing solutions for your business.</p>
           </div>

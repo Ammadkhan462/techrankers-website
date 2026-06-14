@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Search, MousePointer2, Code2, BarChart3, TrendingUp, Target } from 'lucide-react';
+import { Search, MousePointer2, Code2, BarChart3, TrendingUp, Target, Smartphone, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
@@ -64,6 +64,26 @@ const Services = () => {
       borderColor: 'border-violet-200',
       iconBg: 'bg-violet-100',
       iconColor: 'text-violet-600'
+    },
+    {
+      icon: Smartphone,
+      title: 'App Development',
+      description: 'Custom mobile and web apps for your business needs.',
+      color: 'from-rose-600 to-pink-500',
+      bgColor: 'bg-rose-50',
+      borderColor: 'border-rose-200',
+      iconBg: 'bg-rose-100',
+      iconColor: 'text-rose-600'
+    },
+    {
+      icon: Zap,
+      title: 'Project Management & Automation',
+      description: 'Automate your business processes and streamline workflows.',
+      color: 'from-amber-600 to-orange-500',
+      bgColor: 'bg-amber-50',
+      borderColor: 'border-amber-200',
+      iconBg: 'bg-amber-100',
+      iconColor: 'text-amber-600'
     },
   ];
 
